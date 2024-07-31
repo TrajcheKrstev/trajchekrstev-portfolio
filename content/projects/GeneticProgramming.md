@@ -72,4 +72,4 @@ The genetic algorithm was tested on a dataset of 98 equations, with x-values and
 
 The algorithm encounters challenges in finding optimal solutions for more complex equations. For instance, in the case of an equation like **4x^5 - 3x^3 + x^2 + x - 2**, the algorithm often converges to solutions such as **4x^2 - 3x^2 + x^2**, where components like **+ x** or **- 2** may not significantly impact the fitness function.
 
-{{<figure src="/images/acc.jpg" alt="Correct Solutions">}}
+{{<image src="/images/acc.jpg" alt="Correct Solutions">}}
