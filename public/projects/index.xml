@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Trajche Krstev</title>
+    <link>http://localhost:1313/projects/</link>
+    <description>Recent content in Projects on Trajche Krstev</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Android Recipe App</title>
+      <link>http://localhost:1313/projects/androidrecipeapp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/androidrecipeapp/</guid>
+      <description>This project, part of the &lt;strong&gt;Platform Based Development&lt;/strong&gt; course, involved developing an Android app for managing cooking recipes. The app enables users to browse online recipes filtered by the main ingredient, view recipe details, mark recipes as favorites, and access favorite recipes offline. The project encompasses various Android development components and classes to deliver a functional and user-friendly application.</description>
+    </item>
+    <item>
+      <title>Genetic Programming for Symbolic Regression</title>
+      <link>http://localhost:1313/projects/geneticprogramming/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/geneticprogramming/</guid>
+      <description>&lt;strong&gt;Genetic Programming for Symbolic Regression&lt;/strong&gt; is a group project developed as part of the Intelligent Systems course. This project leverages genetic programming techniques to predict mathematical equations based on given y-values. By simulating the process of natural selection, the algorithm evolves potential solutions over multiple generations to find the best-fitting equation.</description>
+    </item>
+    <item>
+      <title>News Article Comment Prediction</title>
+      <link>http://localhost:1313/projects/newsarticlecommentprediction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/newsarticlecommentprediction/</guid>
+      <description>This project, completed as part of the &lt;strong&gt;Intro to Data Mining&lt;/strong&gt; course, involved developing a predictive model to estimate the number of comments on news articles. The model uses a combination of text processing techniques and machine learning algorithms, leveraging various features extracted from article content and metadata to make accurate predictions.</description>
+    </item>
+    <item>
+      <title>OxyGem - Unity</title>
+      <link>http://localhost:1313/projects/oxygemunity/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/oxygemunity/</guid>
+      <description>&lt;strong&gt;OxyGem - Unity&lt;/strong&gt; is an upgraded version of the original OxyGem - WebGPU, rebuilt using the powerful &lt;strong&gt;Unity Game Engine&lt;/strong&gt;. This enhanced version maintains the core gameplay while leveraging Unity&amp;rsquo;s extensive features to deliver a more refined and immersive experience.</description>
+    </item>
+    <item>
+      <title>OxyGem - WebGPU</title>
+      <link>http://localhost:1313/projects/oxygemwebgpu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/oxygemwebgpu/</guid>
+      <description>&lt;strong&gt;OxyGem&lt;/strong&gt; is an immersive game developed as part of a group project for the &lt;strong&gt;Computer Graphics and Game Technology&lt;/strong&gt; course. In this game, you play as a researcher stranded in an underwater cave with limited oxygen. Your mission is to locate and collect magic gems scattered throughout the cave to activate a portal and escape before your oxygen runs out.</description>
+    </item>
+    <item>
+      <title>Tutoro: Connecting Students and Tutors</title>
+      <link>http://localhost:1313/projects/tutoro/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/tutoro/</guid>
+      <description>&lt;strong&gt;Tutoro&lt;/strong&gt; is a dynamic web application developed as part of a collaborative group project for the &lt;strong&gt;Web Programming&lt;/strong&gt; course. The platform aims to connect students seeking tutoring in various subjects with qualified tutors offering their expertise.</description>
+    </item>
+  </channel>
+</rss>

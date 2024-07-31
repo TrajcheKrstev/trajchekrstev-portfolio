@@ -1,0 +1,52 @@
+<style>
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1em;
+    background: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  .contact-form label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+  }
+  .contact-form input[type="email"],
+  .contact-form textarea {
+    width: calc(100% - 1em);
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  .contact-form button {
+    display: inline-block;
+    padding: 0.5em 1em;
+    background: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .contact-form button:hover {
+    background: #282a2b;
+  }
+</style>
+
+<form
+  action="https://formspree.io/f/mrbzqbnl"
+  method="POST"
+  class="contact-form"
+>
+  <label>
+    Your email:
+    <input type="email" name="email" required />
+  </label>
+  <label>
+    Your message:
+    <textarea name="message" required></textarea>
+  </label>
+  <button type="submit">Send</button>
+</form>

@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Android Recipe App | Trajche Krstev</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="This project, part of the Platform Based Development course, involved developing an Android app for managing cooking recipes. The app enables users to browse online recipes filtered by the main ingredient, view recipe details, mark recipes as favorites, and access favorite recipes offline. The project encompasses various Android development components and classes to deliver a functional and user-friendly application.">
+    <meta name="generator" content="Hugo 0.129.0">
+    
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.css" >
+
+
+
+    
+
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="http://localhost:1313/projects/androidrecipeapp/">
+    
+
+    <meta property="og:url" content="http://localhost:1313/projects/androidrecipeapp/">
+  <meta property="og:site_name" content="Trajche Krstev">
+  <meta property="og:title" content="Android Recipe App">
+  <meta property="og:description" content="This project, part of the Platform Based Development course, involved developing an Android app for managing cooking recipes. The app enables users to browse online recipes filtered by the main ingredient, view recipe details, mark recipes as favorites, and access favorite recipes offline. The project encompasses various Android development components and classes to deliver a functional and user-friendly application.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="projects">
+
+  <meta itemprop="name" content="Android Recipe App">
+  <meta itemprop="description" content="This project, part of the Platform Based Development course, involved developing an Android app for managing cooking recipes. The app enables users to browse online recipes filtered by the main ingredient, view recipe details, mark recipes as favorites, and access favorite recipes offline. The project encompasses various Android development components and classes to deliver a functional and user-friendly application.">
+  <meta itemprop="wordCount" content="413">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Android Recipe App">
+  <meta name="twitter:description" content="This project, part of the Platform Based Development course, involved developing an Android app for managing cooking recipes. The app enables users to browse online recipes filtered by the main ingredient, view recipe details, mark recipes as favorites, and access favorite recipes offline. The project encompasses various Android development components and classes to deliver a functional and user-friendly application.">
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  
+  <header class="cover bg-top" style="background-image: url('http://localhost:1313/images/recipeApp.png');">
+    <div class="bg-black-60">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        Trajche Krstev
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/about/" title="About page">
+              About
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/contact/" title="Contact page">
+              Contact
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/projects/" title="Projects page">
+              Projects
+            </a>
+          </li>
+          
+        </ul>
+      
+      
+<div class="ananke-socials">
+  
+    
+    <a href="https://github.com/TrajcheKrstev" target="_blank" rel="noopener" class="github ananke-social-link link-transition stackoverflow link dib z-999 pt3 pt0-l mr1" title="GitHub link" aria-label="follow on GitHub——Opens in a new window">
+      
+        <span class="icon"><svg style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+  <path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/>
+</svg>
+</span>
+      
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;"/>
+</svg>
+</span></a>
+  
+    
+    <a href="https://www.linkedin.com/in/trajche-krstev" target="_blank" rel="noopener" class="linkedin ananke-social-link link-transition stackoverflow link dib z-999 pt3 pt0-l mr1" title="LinkedIn link" aria-label="follow on LinkedIn——Opens in a new window">
+      
+        <span class="icon"><svg style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;"/>
+</svg>
+</span>
+      
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;"/>
+</svg>
+</span></a>
+  
+</div>
+
+    </div>
+  </div>
+</nav>
+
+      <div class="tc-l pv6 ph3 ph4-ns">
+        
+          <div class="f2 f1-l fw2 white-90 mb0 lh-title">Android Recipe App</div>
+          
+        
+      </div>
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked ttu">
+          
+        Projects
+      </aside>
+      
+
+
+
+
+
+
+
+
+
+
+  <div id="sharing" class="mt3 ananke-socials">
+    
+      
+      <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:1313/projects/androidrecipeapp/&amp;title=Android%20Recipe%20App" class="ananke-social-link linkedin no-underline" aria-label="share on LinkedIn">
+        
+        <span class="icon"> <svg style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;"/>
+</svg>
+</span>
+        
+      </a>
+    
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1">Android Recipe App</h1>
+      
+      
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><h3 id="description">Description</h3>
+<p>This project, part of the <strong>Platform Based Development</strong> course, involved developing an Android app for managing cooking recipes. The app enables users to browse online recipes filtered by the main ingredient, view recipe details, mark recipes as favorites, and access favorite recipes offline. The project encompasses various Android development components and classes to deliver a functional and user-friendly application.</p>
+<h3 id="main-features">Main Features</h3>
+<ol>
+<li>
+<p><strong>Browse Recipes by Ingredient:</strong></p>
+<ul>
+<li>Users can search for recipes by selecting a main ingredient. The app fetches matching recipes from <a href="https://www.themealdb.com">TheMealDB API</a>.</li>
+</ul>
+</li>
+<li>
+<p><strong>View Recipe Details:</strong></p>
+<ul>
+<li>Detailed information about each recipe, including ingredients, measures, and preparation instructions, is available.</li>
+</ul>
+</li>
+<li>
+<p><strong>Mark as Favorites:</strong></p>
+<ul>
+<li>Users can mark recipes as favorites, making them accessible even when offline.</li>
+</ul>
+</li>
+<li>
+<p><strong>Offline Access to Favorites:</strong></p>
+<ul>
+<li>The app stores favorite recipes in a local Room database, ensuring they are available without internet connectivity.</li>
+</ul>
+</li>
+</ol>
+<h3 id="components-and-key-concepts">Components and Key Concepts</h3>
+<h4 id="splash-screen">Splash Screen</h4>
+<ul>
+<li><strong>SplashActivity:</strong>
+<ul>
+<li>Displays a splash screen for 2 seconds before navigating to MainActivity.</li>
+<li>Layout file: <code>activity_splash.xml</code>.</li>
+</ul>
+</li>
+</ul>
+<h4 id="main-screen">Main Screen</h4>
+<ul>
+<li>
+<p><strong>MainActivity:</strong></p>
+<ul>
+<li>Uses <code>CoordinatorLayout</code> with <code>AppBarLayout</code> and <code>TabLayout</code> for navigation.</li>
+<li>Contains a <code>ViewPager2</code> connected with <code>SectionsPagerAdapter</code>.</li>
+<li>Layout file: <code>activity_main.xml</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>SectionsPagerAdapter (FragmentStateAdapter; adapter):</strong></p>
+<ul>
+<li>Manages the fragments displayed in <code>ViewPager2</code>.</li>
+</ul>
+</li>
+</ul>
+<h4 id="search-functionality">Search Functionality</h4>
+<ul>
+<li>
+<p><strong>SearchFragment:</strong></p>
+<ul>
+<li>Allows users to search recipes by main ingredient.</li>
+<li>Displays search results in a <code>RecyclerView</code> grid with images and titles.</li>
+<li>Layout file: <code>fragment_search.xml</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>SearchViewModel:</strong></p>
+<ul>
+<li>Handles data operations, interacting with <code>RecipeRepository</code> to fetch recipes.</li>
+</ul>
+</li>
+<li>
+<p><strong>Adapters:</strong></p>
+<ul>
+<li><strong>SpinnerAdapter:</strong> Populates the ingredient list in a <code>Spinner</code>.</li>
+<li><strong>RecyclerViewAdapter:</strong> Manages recipe summary items in the <code>RecyclerView</code>.</li>
+</ul>
+</li>
+</ul>
+<h4 id="favorites">Favorites</h4>
+<ul>
+<li>
+<p><strong>FavoritesFragment:</strong></p>
+<ul>
+<li>Displays favorite recipes from the local Room database.</li>
+<li>Layout file: <code>fragment_favorites.xml</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>FavoritesViewModel:</strong></p>
+<ul>
+<li>Manages favorite recipes data, interacting with <code>RecipeRepository</code>.</li>
+</ul>
+</li>
+</ul>
+<h4 id="recipe-details">Recipe Details</h4>
+<ul>
+<li>
+<p><strong>DetailsActivity:</strong></p>
+<ul>
+<li>Shows detailed recipe information, fetched either from the API or the local database.</li>
+<li>Allows users to add or remove recipes from favorites.</li>
+<li>Layout file: <code>activity_details.xml</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>DetailsViewModel:</strong></p>
+<ul>
+<li>Manages the recipe details data.</li>
+</ul>
+</li>
+</ul>
+<h3 id="data-management">Data Management</h3>
+<ul>
+<li>
+<p><strong>Repository Pattern:</strong></p>
+<ul>
+<li><strong>RecipeRepository:</strong> Handles API calls and database interactions.</li>
+</ul>
+</li>
+<li>
+<p><strong>Room Database:</strong></p>
+<ul>
+<li><strong>Database:</strong> Manages database instantiation.</li>
+<li><strong>RecipeDao:</strong> Defines database access methods.</li>
+<li><strong>RecipeDetails (entity):</strong> Represents recipe details in the database.</li>
+</ul>
+</li>
+<li>
+<p><strong>Retrofit2:</strong> Used for API communication with <a href="https://www.themealdb.com">TheMealDB</a>.</p>
+<ul>
+<li><strong>RestAPI:</strong> Defines API endpoints.</li>
+<li><strong>ServiceGenerator:</strong> Creates Rest API clients.</li>
+</ul>
+</li>
+<li>
+<p><strong>Data Transfer Objects (DTOs):</strong></p>
+<ul>
+<li><strong>RecipeDetailsDTO, RecipesByIdDTO, RecipeSummaryDTO, RecipesByIngredientDTO:</strong> Convert JSON data to Kotlin objects.</li>
+</ul>
+</li>
+<li>
+<p><strong>Intermediate Models:</strong></p>
+<ul>
+<li><strong>RecipeDetailsIM, RecipeSummaryIM:</strong> Hold data from either the server or local database.</li>
+</ul>
+</li>
+</ul>
+<h3 id="implementation-details">Implementation Details</h3>
+<ul>
+<li><strong>Error Handling:</strong> Errors are managed with user-friendly messages.</li>
+<li><strong>Offline Functionality:</strong> Favorite recipes are accessible without an internet connection.</li>
+<li><strong>UI Enhancements:</strong> Swipe-to-refresh, scrollable content, and improved interface design.</li>
+</ul>
+<h3 id="video-demonstration">Video Demonstration</h3>
+<style>
+    .video-shortcode {
+  max-width: 50%;
+  height: auto;
+}
+
+</style>
+
+<video class="video-shortcode" preload="auto" controls>
+    <source src="/videos/androidRecipeApp.webm" type="video/webm" />
+    There should have been a video here but your browser does not seem to support
+    it.
+  </video>
+  
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://localhost:1313/" >
+    &copy;  Trajche Krstev 2024 
+  </a>
+    <div>
+<div class="ananke-socials">
+  
+    
+    <a href="https://github.com/TrajcheKrstev" target="_blank" rel="noopener" class="github ananke-social-link link-transition stackoverflow link dib z-999 pt3 pt0-l mr1" title="GitHub link" aria-label="follow on GitHub——Opens in a new window">
+      
+        <span class="icon"><svg style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+  <path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/>
+</svg>
+</span>
+      
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;"/>
+</svg>
+</span></a>
+  
+    
+    <a href="https://www.linkedin.com/in/trajche-krstev" target="_blank" rel="noopener" class="linkedin ananke-social-link link-transition stackoverflow link dib z-999 pt3 pt0-l mr1" title="LinkedIn link" aria-label="follow on LinkedIn——Opens in a new window">
+      
+        <span class="icon"><svg style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;"/>
+</svg>
+</span>
+      
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;"/>
+</svg>
+</span></a>
+  
+</div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

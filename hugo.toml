@@ -1,0 +1,10 @@
+
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Trajche Krstev'
+theme = "ananke"
+sectionPagesMenu = 'main'
+[params]
+    linkedin = "https://www.linkedin.com/in/trajche-krstev"
+    github = "https://github.com/TrajcheKrstev"
+contact_form_action = "https://formspree.io/f/mrbzqbnl"
