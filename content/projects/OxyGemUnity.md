@@ -31,4 +31,4 @@ summary = "**OxyGem - Unity** is an upgraded version of the original OxyGem - We
 
 ### Video Demonstration
 
-{{<video src="/videos/RGTI2.mp4" type="video/mp4" preload="auto" >}}
+{{<video src="videos/RGTI2.mp4" type="video/mp4" preload="auto" >}}

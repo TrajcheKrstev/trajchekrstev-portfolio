@@ -112,4 +112,4 @@ This project, part of the **Platform Based Development** course, involved develo
 
 ### Video Demonstration
 
-{{<videoPortrait src="/videos/androidRecipeApp.webm" type="video/webm" preload="auto" >}}
+{{<videoPortrait src="videos/androidRecipeApp.webm" type="video/webm" preload="auto" >}}

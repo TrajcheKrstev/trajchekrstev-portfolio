@@ -43,4 +43,4 @@ The game leverages a variety of technologies and methodologies to deliver an eng
 
 ## Video Demonstration
 
-{{<video src="/videos/RGTI.mp4" type="video/mp4" preload="auto" >}}
+{{<video src="videos/RGTI.mp4" type="video/mp4" preload="auto" >}}

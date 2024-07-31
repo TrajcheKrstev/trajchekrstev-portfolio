@@ -50,4 +50,4 @@ router.post("/students", ctrlStudents.studentsCreate);
 
 ## Video Demonstration
 
-{{<video src="/videos/tutoro.mp4" type="video/mp4" preload="auto" >}}
+{{<video src="videos/tutoro.mp4" type="video/mp4" preload="auto" >}}
