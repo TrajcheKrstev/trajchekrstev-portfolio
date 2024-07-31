@@ -1,5 +1,5 @@
 
-baseURL = 'https://example.org/'
+baseURL = 'https://trajchekrstev.github.io/trajchekrstev-portfolio/'
 languageCode = 'en-us'
 title = 'Trajche Krstev'
 theme = "ananke"
@@ -8,3 +8,5 @@ sectionPagesMenu = 'main'
     linkedin = "https://www.linkedin.com/in/trajche-krstev"
     github = "https://github.com/TrajcheKrstev"
 contact_form_action = "https://formspree.io/f/mrbzqbnl"
+canonifyURLs = true
+relativeURLs = true
