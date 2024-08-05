@@ -11,7 +11,7 @@ This project, completed as part of the **Intro to Data Mining** course, involved
 
 ### Code Overview
 
-The project utilizes several Python libraries, including `scikit-learn`, `pandas`, `nltk`, and `lemmagen3` for text processing, feature extraction, and model training. Below is a high-level overview of the key components of the code:
+The project utilizes several Python libraries, including `scikit-learn`, `pandas`, and `nltk`for text processing, feature extraction, and model training. Below is a high-level overview of the key components of the code:
 
 1. **Data Reading and Preprocessing:**
 
