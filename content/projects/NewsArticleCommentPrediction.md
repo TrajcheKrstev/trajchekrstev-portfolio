@@ -66,3 +66,5 @@ The project utilizes several Python libraries, including `scikit-learn`, `pandas
 
 - Trained the model to predict the square root of the number of comments to improve the Mean Absolute Error (MAE).
 - Experimented with various models and feature combinations, ultimately finding Ridge regression to be the best performing model in terms of speed and accuracy.
+
+[Github Repository](https://github.com/TrajcheKrstev/comment_prediction/tree/main)
